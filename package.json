@@ -1,0 +1,21 @@
+{
+  "name": "vanzz-userbot-pay-automated",
+  "version": "1.0.0",
+  "description": "Userbot Telegram dengan Otomatisasi Screenshot QRIS Hotelmurah",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "telegram": "^2.22.2",
+    "puppeteer-core": "^23.0.0",
+    "chrome-aws-lambda": "^10.1.0",
+    "axios": "^1.7.0",
+    "input": "^1.0.1"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "author": "Vanzz Dev",
+  "license": "ISC"
+}
