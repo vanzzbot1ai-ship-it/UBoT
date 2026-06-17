@@ -8,12 +8,12 @@ const chromium = require('chrome-aws-lambda'); // Wajib buat Vercel/Cloud
  * --- KONFIGURASI DATA AKUN & CHANNEL ---
  */
 const apiId = 31767208; 
-const apiHash = "6f8e78044a7ea2da138e38d0d3f2dd48";
+const apiHash = "API_HAS MU";
 const myUserId = "8651425286"; 
 const channelTrxId = "@vanzztrx"; 
 const channelLink = "https://t.me/vanzztrx"; 
 
-const sessionString = "1BQANOTEuMTA4LjU2LjE4MAG7BHbCZE0W4b8GpB9+CSveeND/fgWrw3z36qhQ5UNwYdB6NBufGSCl+lSFjpco022G8KeeKax9R1jx2kur8Pv4ivBSMeOR9EpF/dC1bpY64FQd1xDQFeuj0MJC6agIqOkB/E4WEb7LLNxz+1rdpsUtnYVxcvDHn7i/G0tZe709offo4EWM3ywXAdIxHma2tvERxMTCcUem0lE1GG6zZXcagIcSUqIaAlso5ORqNwptrDDXLmDMwHts4jL1PCrGpKXnfLzoKBy2uA+u8oneZBNfwsMWc7I1YRGzlVlK7dqKQPGqHQgssXI+XqWFcvl8De8EqSAXUCE6sMgQbtLa7ZknGA==";
+const sessionString = "sesi_mu";
 const stringSession = new StringSession(sessionString); 
 
 // --- FUNGSI OTOMATISASI HOTELMURAH ---
@@ -32,7 +32,7 @@ async function getRealQRIS(nominal) {
         await page.goto('https://www.hotelmurah.com/pulsa/top-up-dana', { waitUntil: 'networkidle2' });
 
         // Langkah 2: Input No HP
-        await page.type('input[name="phone_number"]', '0895365156485');
+        await page.type('input[name="phone_number"]', 'NOMOR_DANA_MU');
 
         // Langkah 3: Pilih Nominal
         const nominalTarget = `DANA ${parseInt(nominal).toLocaleString('id-ID')}`;
